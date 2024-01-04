@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "qwtel.sqlite-viewer",
+        "dbaeumer.vscode-eslint",
+        "ecmel.vscode-html-css",
+        "mohd-akram.vscode-html-format",
+        "scrapecrow.html-escape",
+        "ritwickdey.liveserver"
+    ]
+}

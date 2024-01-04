@@ -13,6 +13,9 @@ npm install
 
 Please note that during the lecture, a MacBook Pro with M2 chip and macOS Sonoma 14.1.2 (23B92) has been used. All scripts should be independend from the operating system, but they have not been tested on any other system.
 
+### VS Code
+The code snippets have been written and demonstrated using [Visual Studio Code](https://code.visualstudio.com/download). If you use VS Code, some extensions are recommended to be installed.
+
 
 ### Author
 Uwe Hahne (uwe.hahne@hfu.eu)
