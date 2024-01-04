@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladybug Drawing</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="ladybugCanvas" width="400" height="300"></canvas>
+
+    <script>
+        // Get the canvas element
+        var canvas = document.getElementById("ladybugCanvas");
+        var ctx = canvas.getContext("2d");
+
+        // Draw the ladybug
+        ctx.beginPath();
+        ctx.fillStyle = "#ff0000"; // Red body
+        ctx.arc(200, 150, 50, 0, 2 * Math.PI); // Body
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#000000"; // Black head
+        ctx.arc(200, 120, 20, 0, 2 * Math.PI); // Head
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#000000"; // Black dots
+        ctx.arc(180, 130, 5, 0, 2 * Math.PI); // Left dot
+        ctx.arc(220, 130, 5, 0, 2 * Math.PI); // Right dot
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#000000"; // Black line (center)
+        ctx.moveTo(200, 150);
+        ctx.lineTo(200, 180);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#000000"; // Black legs
+        ctx.lineWidth = 2;
+        ctx.moveTo(190, 170);
+        ctx.lineTo(180, 190);
+        ctx.moveTo(200, 170);
+        ctx.lineTo(200, 190);
+        ctx.moveTo(210, 170);
+        ctx.lineTo(220, 190);
+        ctx.stroke();
+    </script>
+</body>
+</html>
