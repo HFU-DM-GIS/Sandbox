@@ -12,6 +12,7 @@ db.serialize(() => {
   const stmt = db.prepare('INSERT INTO users VALUES (?, ?)');
   stmt.run(1, 'John Doe');
   stmt.run(2, 'Jane Smith');
+  stmt.run(4, 'Horst Hund');
   stmt.finalize();
 
   // Retrieve data and print it
