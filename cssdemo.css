@@ -1,0 +1,25 @@
+div.schwarz p.rot {
+    color: brown;
+  }
+  
+  div[class] p.rot {
+    color: pink;
+  }
+  
+  .rot {
+    color: red;
+    /*color: red !important;*/
+  }
+  
+  #blau {
+    color: blue;
+  }
+  
+  p {
+    color: green;
+    /*color: green !important;*/
+  }
+  
+  div div {
+    color: grey;
+  }

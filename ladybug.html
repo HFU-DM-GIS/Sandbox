@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ladybug Drawing</title>
+<style>
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="200"></canvas>
+
+<script>
+    // Get the canvas element
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Draw the ladybug
+    ctx.beginPath();
+    ctx.fillStyle = "red";
+    ctx.arc(100, 100, 50, 0, Math.PI * 2); // Body
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.fillStyle = "black";
+    ctx.arc(70, 70, 10, 0, Math.PI * 2); // Head
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(130, 70, 10, 0, Math.PI * 2); // Head
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.fillStyle = "black";
+    ctx.arc(70, 100, 5, 0, Math.PI * 2); // Spots
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(100, 100, 5, 0, Math.PI * 2); // Spots
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(130, 100, 5, 0, Math.PI * 2); // Spots
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.fillStyle = "black";
+    ctx.arc(100, 130, 20, 0, Math.PI); // Bottom semicircle
+    ctx.fill();
+    ctx.closePath();
+</script>
+</body>
+</html>

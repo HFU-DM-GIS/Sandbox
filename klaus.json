@@ -1,0 +1,8 @@
+{
+    "studentNr": 123456, 
+    "firstName": "Klaus", 
+    "lastName": "Meng", 
+    "semester": 2, 
+    "faculty": "DM", 
+    "course": "OMB"
+}
